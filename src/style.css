@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+.container {
+  padding: 0 2.5%;
+}
+
+.box {
+  display: flex;
+  height: 300;
+  width: 300;
+  flex-wrap: wrap;
+}
+
+
