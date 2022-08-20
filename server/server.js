@@ -2,11 +2,11 @@ const express = require('express');
 const PORT = 3000;
 const app = express();
 const path = require('path');
-const cors = require('cors');
+//const cors = require('cors');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+//app.use(cors());
 
 app.use(express.static(path.resolve(__dirname, '../src')));
 
