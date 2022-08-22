@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Landing page for Dockervize",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npm i nodemon -g",
+    "dev": "NODE_ENV=development nodemon server/server.js & NODE_ENV=development webpack serve --open",
+    "test": "jest",
+    "build": "webpack",
+    "start": "NODE_ENV=production node server/server.js"
   },
   "author": "DevPods",
   "license": "MIT",
@@ -13,15 +16,19 @@
     "url": "https://github.com/DevPods/dockervize-landing-page.git"
   },
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "express": "^4.18.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
+    "@testing-library/react": "^13.3.0",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.7.1",
     "eslint": "^7.12.1",
     "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-plugin-import": "^2.22.1",
@@ -29,6 +36,11 @@
     "eslint-plugin-react": "^7.21.5",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.3",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.4.0"

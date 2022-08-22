@@ -1,14 +1,27 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React from 'react';
+import { Routes, Route, HashRouter } from 'react-router-dom';
+import Header from './components/Header.jsx';
+import TeamContainer from './components/TeamContainer.jsx';
+import ProductContainer from './components/ProductContainer.jsx';
+import Footer from './components/Footer.jsx';
 
-class App extends Component {
-  render() {
-
-    return (
-      <h1>Dockervize Landing Page</h1>
-    );
-  }
-}
+const App = () => {
 
 
-render(<App />, document.querySelector('#root'));
+  return (
+    <div>
+      <HashRouter>
+        <Header/>
+        <Routes>
+          <Route path = "/team" element = {<TeamContainer />}/>
+          <Route path = "product" element = {<ProductContainer/>}/>
+        </Routes>
+        <Footer />
+      </HashRouter>
+    </div>
+  );
+  
+};
+
+
+export default App;
