@@ -8,3 +8,4 @@ CMD ["npm", "run", "dev"]
 
 #docker build -t dockervize/dev .
 #docker run -it -p 8081:8080 --name dockervize-dev dockervize/dev
+
