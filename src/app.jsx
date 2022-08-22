@@ -6,22 +6,18 @@ import ProductContainer from './components/ProductContainer.jsx';
 import Footer from './components/Footer.jsx';
 
 const App = () => {
-
-
   return (
     <div>
       <HashRouter>
-        <Header/>
+        <Header />
         <Routes>
-          <Route path = "/team" element = {<TeamContainer />}/>
-          <Route path = "product" element = {<ProductContainer/>}/>
+          <Route path='/team' element={<TeamContainer />} />
+          <Route path='product' element={<ProductContainer />} />
         </Routes>
         <Footer />
       </HashRouter>
     </div>
   );
-  
 };
-
 
 export default App;
