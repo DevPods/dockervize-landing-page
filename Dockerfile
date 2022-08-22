@@ -3,7 +3,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 RUN npm install
 RUN npm rebuild node-sass
-EXPOSE 3000
+EXPOSE 8080
 CMD ["npm", "run", "dev"]
 
 #docker build -t dockervize/dev .
