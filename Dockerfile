@@ -6,3 +6,5 @@ RUN npm install
 EXPOSE 3000
 CMD ["npm", "run", "dev"]
 
+#docker build -t dockervize/container .
+#docker run -p 3000:3000 dockervize/container

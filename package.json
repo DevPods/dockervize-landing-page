@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page for Dockervize",
   "scripts": {
+    "preinstall": "npm i nodemon -g",
     "dev": "NODE_ENV=development nodemon server/server.js & NODE_ENV=development webpack serve --open",
     "test": "jest",
     "build": "webpack",
