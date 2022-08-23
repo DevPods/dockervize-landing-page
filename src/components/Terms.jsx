@@ -34,7 +34,7 @@ const Terms = () => {
   
 
   return (
-    <>
+    <div className ="terms">
       <h2>{termsTitle}</h2>
       <p>{termsContent}</p>
       <h2>{licenseTitle}</h2>
@@ -45,7 +45,7 @@ const Terms = () => {
       <p>{liabilityContent}</p>
       <h2>{rightsTitle}</h2>
       <p>{rightsContent}</p>
-    </>
+    </div>
   );
 };
 

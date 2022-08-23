@@ -27,8 +27,9 @@ const Footer = () => {
         <a href="https://github.com/oslabs-beta/dockervize#readme" className="footer-component"><ul className="footer-component" >{gettingStarted}</ul></a>
         <a href="https://github.com/oslabs-beta/dockervize" className="footer-component"><ul className="footer-component" >{docs}</ul></a>
       </div>
-      <p className="footer-component" >{osLabTag}</p>
+      <p className="footer-component"> {osLabTag}</p>
     </div>
+
 
   );
 

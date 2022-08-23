@@ -14,14 +14,14 @@ const Privacy = () => {
     to provide it, will be made clear to you at the point we ask you to provide your personal information.';
 
   return (
-    <>
+    <div className ="privacy">
       <h2>{privacyTitle}</h2>
       <p>{privacyContent}</p>
       <h2>{consentTitle}</h2>
       <p>{consentContent}</p>
       <h2>{informationTitle}</h2>
       <p>{informationContent}</p>
-    </>
+    </div>
   );
 
 

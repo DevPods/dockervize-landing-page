@@ -23,7 +23,6 @@ $bg: black;
     border: 2px solid #819ef0;
     border-radius: 15px;
     width: 80%;
-    min-height: calc(100vh - 150px);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -65,7 +64,7 @@ $bg: black;
   .header-component {
     opacity: 1;
     background-color: transparent;
-    //font-weight: 200;
+    font-size: 17px;
   }
 
   
@@ -116,7 +115,6 @@ $bg: black;
   
   .containers {
     display: flex;
-    min-height: calc(100vh - 150px);
     width: 100%;
   }
   
@@ -199,7 +197,7 @@ $bg: black;
   justify-content: space-around;
   width: 100%;
   align-items: center;
-  background: linear-gradient(rgba(19, 119, 234, 0.964), lightblue);
+  background: linear-gradient(lightblue, rgba(19, 119, 234, 0.964));
 }
 
   .footer-container img {
@@ -221,24 +219,109 @@ $bg: black;
   }
 
   .product-container {
+    margin-top: -20px;
     background-color: transparent;
   }
-
   
   .product-content {
     color:black;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    font-size: large;
   }
   
+  .product-content p {
+    margin-right: 75px;
+
+  }
+  .product-content img {
+      margin-top: -25px;
+      height: 500px;
+      width: 950px;
+    }
+
+
+  
+    
+  
 .team-container {
-  max-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  flex-direction:row;
+  grid-row: 150px;
+  align-items:flex-start;
   color: black;
+  margin-left: 50px;
 }
  
+  
   .team-container img{
     height: 150px;
-    width: 150 px;
+    width: 150px;
+    border-radius: 50%;
   }
 
+  .team-container span{
+    font-size: larger;
+  }
+  
+
+.team-container-1 {
+  flex: 1;
+  white-space: pre-wrap;
+  margin-left: 50px;
+  margin-top: 10px;
+  min-width: 45%;
+  margin-right: 100px;
+}
+  
+
+.team-container-2 {
+  margin-top: 15px;
+  min-width: 45%;
+}
+
+.logos {
+  margin-left: 150px;
+}
+  
+  .logos img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  }
+
+.terms {
+  margin-left: 50px;
+  margin-right: 150px;
+}
+
+  .terms p {
+    margin-bottom: 25px;
+  }
+
+  .terms h2 {
+    margin-bottom: 5px;
+  }
+
+.privacy {
+    margin-left: 50px;
+    margin-right: 150px;
+  }
+
+  .privacy h2 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+
+
+  
 
 
 
