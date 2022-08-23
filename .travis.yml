@@ -20,5 +20,5 @@ deploy:
   provider: script
   skip_cleanup: true
   on:
-    branch: master
+    branch: main
   script: sh $TRAVIS_BUILD_DIR/scripts/deploy.sh
