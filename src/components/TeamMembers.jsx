@@ -13,6 +13,7 @@ const TeamMembers = () => {
       <div className="team-container-1">
         <img src={Bruno} alt="Man wearing a button down shirt" />
         <span><b className="names">Bruno Albero</b></span>
+        <p>My passion is building fun and robust projects. When I leave my coding cave, you’ll find me playing volleyball, spoiling my cat, or at boardgames night!</p>
         <p className="logos">
           <a href="https://www.linkedin.com/in/alberobruno/"><img src={linkedIn} alt="Linked in logo. Blue cirle with white LI in the center."/></a>
           <a href="https://github.com/alberobruno"><img src={gitHub} alt="Github logo. Black circle with white octocat in the middle." /></a>
@@ -30,6 +31,7 @@ const TeamMembers = () => {
       <div className="team-container-2">
         <img src={Ian} alt="Man wearing a light blue suit" />
         <span><b>Sinian Ma</b></span>
+        <p>I am a software engineer with a strong interest in full-stack development (with React, Redux, Node.js, Express, Javascript/Typescript) and building open-source products. In my leisure time, I like to play tennis and bring my golden retriever to the dog beach at Prospect Park!</p>
         <p className="logos">
           <a href ="https://www.linkedin.com/in/sinian-ma/"> <img src={linkedIn} alt="Linked in logo. Blue cirle with white LI in the center." /></a>
           <a href="https://github.com/ian-ma-nyc"><img src={gitHub} alt="Github logo. Black circle with white octocat in the middle." /></a>
