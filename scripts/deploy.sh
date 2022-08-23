@@ -20,4 +20,4 @@ aws s3 cp dockerdeploy.zip s3://$EB_BUCKET/dockerdeploy.zip
 # Create a new application version with new Dockerrun
 aws elasticbeanstalk create-application-version --application-name dockervize-landing --version-label $TRAVIS_COMMIT --source-bundle S3Bucket=$EB_BUCKET,S3Key=dockerdeploy.zip
 # Update environment to use new version number
-aws elasticbeanstalk update-environment --environment-name [Dockervizelanding-env] --version-label $TRAVIS_COMMIT
+aws elasticbeanstalk update-environment --environment-name Dockervizelanding-env --version-label $TRAVIS_COMMIT
