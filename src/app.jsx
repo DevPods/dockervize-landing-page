@@ -8,24 +8,20 @@ import Terms from './components/Terms.jsx';
 import Privacy from './components/Privacy.jsx';
 
 const App = () => {
-
-
   return (
     <div>
       <HashRouter>
-        <Header/>
+        <Header />
         <Routes>
           <Route path = "/team" element = {<TeamContainer />}/>
           <Route path = "/" element = {<ProductContainer/>}/>
-          <Route path = "/terms" element = {<Terms />}/>
-          <Route path = "/privacy" element = {<Privacy />} />
+          <Route path= "/terms" element = {<Terms />}/>
+          <Route path = "/privacy" element = {<Privacy />}/>
         </Routes>
         <Footer />
       </HashRouter>
     </div>
   );
-  
 };
-
 
 export default App;

@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, '../src')));
+app.use(express.static(path.resolve(__dirname, '../dist')));
 
 //catch-all route handler for any requests to an unknown route
 app.get('*', (req, res) => {
@@ -26,10 +26,10 @@ app.use((err, req, res, next) => {
   console.log(errorObj.log);
   res.status(errorObj.status).json(errorObj.message);
 });
-  
+
 //listen on port
 app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
 });
-  
+
 module.exports = { app };

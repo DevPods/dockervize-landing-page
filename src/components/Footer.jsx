@@ -2,7 +2,6 @@ import React from 'react';
 import fullLogo from '../assets/Transparent Logo.svg';
 import { Link } from 'react-router-dom';
 
-
 const Footer = () => {
   const about = 'About Us';
   const teamLink = 'The Team';
@@ -32,9 +31,6 @@ const Footer = () => {
 
 
   );
-
-
-
 };
 
 export default Footer;
