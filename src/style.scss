@@ -15,10 +15,6 @@ $bg: black;
   flex-grow: 1;
 }
 
-// .body-container {
-//   flex-grow: 1;
-// }
-
 h1 {
   color: $primary-color;
   background-color: transparent;
@@ -43,8 +39,6 @@ h1 {
   width: 80%;
   justify-content: space-between;
   align-items: center;
-  // padding: 10px;
-  // margin-top: 10px;
 }
 
 .dockervize-text {
@@ -63,7 +57,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin-left: 20px;
 }
 
 .header-container {
@@ -99,8 +92,6 @@ h1 {
 }
 
 .logo {
-  // margin-left: 20px;
-  // margin-right: 10px;
   max-height: 75px;
   max-width: 75px;
   background-color: transparent;
@@ -115,10 +106,9 @@ h1 {
   text-decoration: none;
 }
 
-//Quit Button
+//Download Button
 .header-component button {
   border-radius: 5px;
-  // padding: 0.8em 1.8em;
   border: 2px solid #252cb0;
   position: relative;
   overflow: hidden;
@@ -235,8 +225,6 @@ h1 {
 }
 
 .header-container img {
-  // margin-left: 20px;
-  // margin-right: 10px;
   height: 150px;
   width: 150px;
   background-color: transparent;
@@ -244,7 +232,6 @@ h1 {
 
 .header-component {
   background-color: transparent;
-  // font-weight: 200;
 }
 
 //Quit Button
@@ -372,21 +359,32 @@ h1 {
   justify-content: space-around;
   width: 100%;
   max-height: 75px;
-  align-items: center;
   margin: 30px 200px;
-  padding-top: 30px;
-  // position: fixed;
-  // bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-component-title {
+  opacity: 1;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+
+.oslabs-title {
+  opacity: 1;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 5px 0px;
 }
 
 .footer-component {
   opacity: 1;
   background-color: transparent;
   text-decoration: none;
-  margin: 2px 0px;
 }
 
-.footer-title {
+.footer-column {
   display: flex;
   flex-direction: column;
   background-color: transparent;
@@ -399,7 +397,19 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10px 300px;
+  margin: 10px 50vw;
+}
+
+.content-text-title {
+  font-size: 10vh;
+  margin-bottom: 50px;
+}
+
+.content-text {
+  font-size: 4vh;
+  margin-bottom: 50px;
+  overflow-wrap: wrap;
+  // max-width: 65%;
 }
 
 .product-content h1 {
@@ -412,11 +422,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-// .product-content p {
-//   margin-right: 75px;
-// }
 .product-content img {
-  // margin-top: -25px;
   height: 600px;
   width: 1200px;
 }
@@ -425,16 +431,6 @@ h1 {
   font-size: 2rem;
   margin-bottom: 50px;
 }
-// .team-container {
-//   display: flex;
-//   justify-content: space-around;
-//   width: 75%;
-//   flex-direction: row;
-//   grid-row: 150px;
-//   align-items: flex-start;
-//   color: black;
-//   // margin-left: 50px;
-// }
 
 .cards-container {
   display: flex;
@@ -477,26 +473,8 @@ h1 {
   margin-bottom: 15px;
   font-size: 1rem;
 }
-// .team-container span {
-//   font-size: larger;
-// }
-
-// .team-container-1 {
-//   flex: 1;
-//   white-space: pre-wrap;
-//   // margin-left: 50px;
-//   // margin-top: 10px;
-//   min-width: 45%;
-//   // margin-right: 100px;
-// }
-
-// .team-container-2 {
-//   // margin-top: 15px;
-//   min-width: 45%;
-// }
 
 .logos {
-  // margin-left: 150px;
   width: 40%;
   display: flex;
   justify-content: space-between;
@@ -505,29 +483,138 @@ h1 {
 .logos img {
   height: 30px;
   width: 30px;
-  // margin-bottom: 25px;
-  // margin-right: 10px;
 }
 
-.terms {
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-// .terms p {
-//   // margin-bottom: 25px;
-// }
-
-// // .terms h2 {
-// //   margin-bottom: 5px;
-// // }
-
+.terms,
 .privacy {
   margin-left: 150px;
   margin-right: 150px;
 }
 
-// // .privacy h2 {
-// //   margin-top: 25px;
-// //   margin-bottom: 5px;
-// // }
+@media screen and (max-width: 1200px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .members-card {
+    margin-bottom: 25px;
+    height: 350px;
+    width: 300px;
+  }
+
+  .product-content img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+  }
+
+  .footer-component-title {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .product-content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 40vw;
+  }
+  .content-text-title {
+    font-size: 7vw;
+  }
+  .content-text {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .product-content img {
+    display: none;
+  }
+
+  .oslabs-title {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 11rem;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .logo {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-right {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .header-component {
+    opacity: 1;
+    background-color: transparent;
+    font-size: 17px;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .header-right button {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #252cb0;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    transition: 0.3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #252cb0;
+    padding: 10px;
+  }
+
+  .privacy,
+  .terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 50px;
+  }
+
+  .privacy-title,
+  .terms-title {
+    margin-bottom: 10px;
+  }
+}

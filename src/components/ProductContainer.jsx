@@ -1,5 +1,4 @@
 import React from 'react';
-// import screenShot from '../assets/DockerVize.png';
 import recording from '../assets/recording.gif';
 
 const ProductContainer = () => {
@@ -11,15 +10,13 @@ const ProductContainer = () => {
 
   return (
     <div className='product-content'>
-      <h1>
+      <div className='content-text-title'>
         Docker Container <br></br> Visualizer&nbsp;
         <span className='dockervize-text'>DockerVize</span>
-      </h1>
+      </div>
 
-      <p>{productInfo}</p>
+      <div className='content-text'>{productInfo}</div>
       <img src={recording} alt='Recording'></img>
-
-      {/* <img src={screenShot} alt='Screenshot of DockerVize application.'></img> */}
     </div>
   );
 };

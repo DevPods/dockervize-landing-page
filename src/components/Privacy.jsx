@@ -6,11 +6,11 @@ const Privacy = () => {
     'At DockerVize, accessible at DockerVize.com, one of our main priorities is the privacy \
     of our visitors. This Privacy Policy document contains the type of information that is collected and recorded by \
     DockerVize.com and how we use it. This privacy policy applies only to our online activities and is valid for visitors \
-    to our website with reagards to the information that they share/or collect in DockerVize.com. This policy is not \
+    to our website with regards to the information that they share/or collect in DockerVize.com. This policy is not \
     applicable to any information collected offline or via channels other than the website.';
   const consentTitle = 'Consent';
   const consentContent =
-    'By using our website, you hearby consent to our Privacy Policy and agree to its terms.';
+    'By using our website, you hereby consent to our Privacy Policy and agree to its terms.';
   const informationTitle = 'Information we collect';
   const informationContent =
     'The personal information that you are asked to provide, and the reasons why you are asked \
@@ -18,15 +18,15 @@ const Privacy = () => {
 
   return (
     <div className='privacy'>
-      <h2>{privacyTitle}</h2>
+      <h2 className='privacy-title'>{privacyTitle}</h2>
       <p>{privacyContent}</p>
       <br></br>
 
-      <h2>{consentTitle}</h2>
+      <h2 className='privacy-title'>{consentTitle}</h2>
       <p>{consentContent}</p>
       <br></br>
 
-      <h2>{informationTitle}</h2>
+      <h2 className='privacy-title'>{informationTitle}</h2>
       <p>{informationContent}</p>
     </div>
   );

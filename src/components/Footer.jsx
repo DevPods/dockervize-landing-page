@@ -1,12 +1,13 @@
 import React from 'react';
 import fullLogo from '../assets/Transparent Logo.svg';
 import { Link } from 'react-router-dom';
+import logo from '../assets/wordpressTransparent.png';
 
 const Footer = () => {
   return (
     <div className='footer-container'>
-      <div className='footer-title'>
-        <h2 className='footer-component'>About Us</h2>
+      <div className='footer-column'>
+        <h2 className='footer-component-title'>About Us</h2>
         <p className='footer-component'>
           <Link class='footer-component' to='/team'>
             The Team
@@ -22,8 +23,8 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className='footer-title'>
-        <h2 className='footer-component'> Product</h2>
+      <div className='footer-column'>
+        <h2 className='footer-component-title'>Product</h2>
         <a
           href='https://github.com/oslabs-beta/dockervize#readme'
           target='_blank'
@@ -42,7 +43,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className='footer-component'>
+      <p className='oslabs-title'>
         Accelerated by OS Labs, a non-profit supporting open-source projects.
       </p>
     </div>

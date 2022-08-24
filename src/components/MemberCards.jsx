@@ -92,7 +92,8 @@ const TeamMembers = () => {
           <p className='member-bio'>
             I am a software engineer with a strong interest in full-stack
             development and building open-source products. In my leisure time, I
-            like to play tennis and bring my golden retriever to the dog beach!
+            like playing tennis and bringing my golden retriever to the dog
+            beach!
           </p>
 
           <p className='logos'>
