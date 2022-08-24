@@ -8,15 +8,16 @@ $bg: black;
   font-family: 'Raleway', sans-serif;
 }
 
-.body {
+.content {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-.body-container {
+  min-height: 50vh;
   flex-grow: 1;
 }
+
+// .body-container {
+//   flex-grow: 1;
+// }
 
 h1 {
   color: $primary-color;
@@ -32,7 +33,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // min-height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -416,8 +417,8 @@ h1 {
 // }
 .product-content img {
   // margin-top: -25px;
-  height: 500px;
-  width: 950px;
+  height: 600px;
+  width: 1200px;
 }
 
 .members-title {

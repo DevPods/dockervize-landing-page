@@ -13,11 +13,11 @@ const Footer = () => {
           </Link>
         </p>
         <p className='footer-component'>
-          <Link class='footer-component' to='/terms'>
+          <Link className='footer-component' to='/terms'>
             Terms of Service
           </Link>
         </p>
-        <Link class='footer-component' to='/privacy'>
+        <Link className='footer-component' to='/privacy'>
           Privacy Policy
         </Link>
       </div>

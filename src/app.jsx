@@ -10,10 +10,11 @@ import Privacy from './components/Privacy.jsx';
 const App = () => {
   return (
     <div>
-      <HashRouter className='body-container'>
-        <Header />
+      <HashRouter>
         <div className='wrapper-container'>
-          <div className='body'>
+          <Header />
+
+          <div className='content'>
             <Routes>
               <Route path='/' element={<ProductContainer />} />
               <Route path='/team' element={<TeamContainer />} />

@@ -1,5 +1,6 @@
 import React from 'react';
-import screenShot from '../assets/DockerVize.png';
+// import screenShot from '../assets/DockerVize.png';
+import recording from '../assets/recording.gif';
 
 const ProductContainer = () => {
   const productTitle = 'Docker Container Metrics Visualizer';
@@ -14,8 +15,11 @@ const ProductContainer = () => {
         Docker Container <br></br> Visualizer&nbsp;
         <span className='dockervize-text'>DockerVize</span>
       </h1>
+
       <p>{productInfo}</p>
-      <img src={screenShot} alt='Screenshot of DockerVize application.'></img>
+      <img src={recording} alt='Recording'></img>
+
+      {/* <img src={screenShot} alt='Screenshot of DockerVize application.'></img> */}
     </div>
   );
 };
