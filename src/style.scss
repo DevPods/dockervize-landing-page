@@ -454,8 +454,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0px 25px;
-  padding-top: 25px;
+  padding: 25px 25px;
   align-items: center;
   margin: 0px 25px;
   height: 375px;
@@ -470,14 +469,16 @@ h1 {
 }
 
 .member-bio {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 1rem;
+  height: 100%;
 }
 
 .logos {
   width: 40%;
   display: flex;
   justify-content: space-between;
+  // margin-bottom: 20px;
 }
 
 .logos img {
@@ -490,6 +491,134 @@ h1 {
   margin-left: 150px;
   margin-right: 150px;
 }
+
+//feature lists
+//- Google Fonts
+$font-google-primary: 'https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap';
+$font-google-secondary: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
+
+//- @type List
+$abril-fatface: 'Abril Fatface', cursive;
+$montserrat: 'Montserrat', sans-serif;
+
+//- Typography
+$base-font-family: $montserrat;
+$heading-font-family: $abril-fatface;
+
+$font-size-small: 0.875em;
+
+/*- Screen Sizes*/
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+/* COLOR HEX */
+$cadet: #4f6d7aff;
+$maximum-blue: #5ea5b8ff;
+$columbia-blue: #c0d6dfff;
+$platinum: #eaeaeaff;
+$cultured: #f3f3f3ff;
+$nero: #444444;
+
+/* COLOR Gradient */
+$dl-gradient-right: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 0.04) 20%,
+  rgba(255, 255, 255, 0) 0%
+);
+
+$body-background-color: $platinum;
+$body-text-color: $nero;
+
+//- Global Functions
+/*import fonts*/
+@if variable-exists(font-google-primary) {
+  @import url($font-google-primary);
+}
+@if variable-exists(font-google-secondary) {
+  @import url($font-google-secondary);
+}
+
+//- Global Mixins
+
+/*media queries*/
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $body-background-color;
+  font-family: $base-font-family;
+  font-size: $font-size-small;
+  color: $body-text-color;
+  line-height: 1.5;
+}
+
+/* LIST */
+dl {
+  counter-reset: count;
+  background: white;
+  padding-left: 4vw; //default is smartphone
+  padding-right: 4vw;
+  margin: 0;
+  @include tablet-up {
+    padding-left: 2vw;
+  }
+  @include desktop {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+}
+
+dt {
+  counter-increment: count;
+  color: $cadet;
+  font-family: $base-font-family;
+  font-size: 4vw;
+  text-transform: uppercase;
+}
+dt::before {
+  content: counter(count, decimal-leading-zero) '.';
+  font-family: $heading-font-family;
+  color: $maximum-blue;
+  margin-left: -1vw;
+  padding-right: 12px;
+}
+
+//end of features list styling
+
+.features-container {
+  display: flex;
+}
+
+.features-container img {
+  height: 300px;
+  width: 600px;
+}
+
+//media queries
 
 @media screen and (max-width: 1200px) {
   .cards-container {
@@ -543,9 +672,11 @@ h1 {
   .product-content img {
     display: none;
   }
+}
 
+@media screen and (max-width: 800px) {
   .oslabs-title {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 
