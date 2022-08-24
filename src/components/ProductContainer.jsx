@@ -1,6 +1,7 @@
 import React from 'react';
 import recording from '../assets/recording.gif';
 import Features from '../components/Features.jsx';
+import GettingStarted from '../components/GettingStarted.jsx';
 
 const ProductContainer = () => {
   const productTitle = 'Docker Container Metrics Visualizer';
@@ -20,6 +21,7 @@ const ProductContainer = () => {
       <img src={recording} alt='Recording'></img>
 
       <Features />
+      <GettingStarted />
     </div>
   );
 };

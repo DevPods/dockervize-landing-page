@@ -8,6 +8,13 @@ $bg: black;
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  color: black;
+}
+a:hover {
+  color: #8bb174;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -359,7 +366,7 @@ h1 {
   justify-content: space-around;
   width: 100%;
   max-height: 75px;
-  margin: 30px 200px;
+  margin: 50px 200px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -456,9 +463,9 @@ h1 {
   justify-content: flex-start;
   padding: 25px 25px;
   align-items: center;
-  margin: 0px 25px;
-  height: 375px;
-  width: 200px;
+  margin: 0px 12.5px;
+  height: 400px;
+  width: 250px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -493,19 +500,8 @@ h1 {
 }
 
 //feature lists
-//- Google Fonts
-$font-google-primary: 'https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap';
-$font-google-secondary: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
 
-//- @type List
-$abril-fatface: 'Abril Fatface', cursive;
-$montserrat: 'Montserrat', sans-serif;
-
-//- Typography
-$base-font-family: $montserrat;
-$heading-font-family: $abril-fatface;
-
-$font-size-small: 0.875em;
+// $font-size-small: 0.875em;
 
 /*- Screen Sizes*/
 $tablet-width: 768px;
@@ -526,53 +522,11 @@ $dl-gradient-right: linear-gradient(
   rgba(255, 255, 255, 0) 0%
 );
 
-$body-background-color: $platinum;
-$body-text-color: $nero;
-
-//- Global Functions
-/*import fonts*/
-@if variable-exists(font-google-primary) {
-  @import url($font-google-primary);
-}
-@if variable-exists(font-google-secondary) {
-  @import url($font-google-secondary);
-}
-
 //- Global Mixins
 
 /*media queries*/
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-@mixin tablet-up {
-  @media (min-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
 body {
-  background-color: $body-background-color;
-  font-family: $base-font-family;
-  font-size: $font-size-small;
-  color: $body-text-color;
   line-height: 1.5;
 }
 
@@ -583,25 +537,18 @@ dl {
   padding-left: 4vw; //default is smartphone
   padding-right: 4vw;
   margin: 0;
-  @include tablet-up {
-    padding-left: 2vw;
-  }
-  @include desktop {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-  }
 }
 
 dt {
   counter-increment: count;
   color: $cadet;
-  font-family: $base-font-family;
+  font-family: 'Raleway', sans-serif;
   font-size: 4vw;
   text-transform: uppercase;
 }
 dt::before {
   content: counter(count, decimal-leading-zero) '.';
-  font-family: $heading-font-family;
+  font-family: 'Raleway', sans-serif;
   color: $maximum-blue;
   margin-left: -1vw;
   padding-right: 12px;
@@ -611,11 +558,121 @@ dt::before {
 
 .features-container {
   display: flex;
+  flex-direction: column;
 }
 
-.features-container img {
-  height: 300px;
+.features-right img:nth-child(1) {
+  height: 350px;
   width: 600px;
+}
+
+.features-right img:nth-child(2) {
+  margin-left: 10px;
+  height: 125px;
+  width: 550px;
+}
+
+.features-content {
+  display: flex;
+}
+.features-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-text-title {
+  font-size: 10vh;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(#6488ec, rgba(122, 118, 118, 0.101));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+//getting started section css
+
+.getting-started-text-title {
+  font-size: 10vh;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  background: -webkit-linear-gradient(#6488ec, rgba(122, 118, 118, 0.101));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tilesWrap {
+  padding: 0;
+  margin: 50px auto;
+  list-style: none;
+  text-align: center;
+}
+.tilesWrap li {
+  display: inline-block;
+  width: 20%;
+  min-width: 200px;
+  max-width: 230px;
+  padding: 80px 20px 40px;
+  position: relative;
+  vertical-align: top;
+  margin: 10px;
+
+  min-height: 23vh;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.tilesWrap li h2 {
+  font-size: 114px;
+  margin: 0;
+  position: absolute;
+  opacity: 0.05;
+  top: 150px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.tilesWrap li h3 {
+  font-size: 20px;
+  color: #819ef0;
+  margin-bottom: 5px;
+}
+.tilesWrap li p {
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
+  margin-top: 5px;
+}
+
+.tilesWrap li:hover h2 {
+  top: 0px;
+  opacity: 0.6;
+}
+
+.tilesWrap li:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: #fff;
+  transform: skew(2deg, 2deg);
+}
+.tilesWrap li:after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 //media queries
@@ -627,7 +684,7 @@ dt::before {
 
   .members-card {
     margin-bottom: 25px;
-    height: 350px;
+    height: 400px;
     width: 300px;
   }
 
@@ -635,6 +692,12 @@ dt::before {
     height: auto;
     width: 100%;
   }
+
+  // .member-bio {
+  //   margin-bottom: 20px;
+  //   font-size: 1rem;
+  //   height: 100%;
+  // }
 }
 
 @media screen and (max-width: 1000px) {
