@@ -1,17 +1,12 @@
 import React from 'react';
-import TeamMembers from './TeamMembers.jsx';
+import MemberCards from './MemberCards.jsx';
 
 const TeamContainer = () => {
-
-
-  return(
+  return (
     <div>
-      <TeamMembers />
+      <MemberCards />
     </div>
   );
-
-
-
 };
 
 export default TeamContainer;

@@ -36,6 +36,10 @@ module.exports = {
           loader: 'url-loader',
         },
       },
+      {
+        test: /\.gif$/,
+        use: ['file-loader'],
+      },
     ],
   },
   plugins: [

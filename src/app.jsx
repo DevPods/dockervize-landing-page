@@ -11,14 +11,20 @@ const App = () => {
   return (
     <div>
       <HashRouter>
-        <Header />
-        <Routes>
-          <Route path = "/team" element = {<TeamContainer />}/>
-          <Route path = "/" element = {<ProductContainer/>}/>
-          <Route path= "/terms" element = {<Terms />}/>
-          <Route path = "/privacy" element = {<Privacy />}/>
-        </Routes>
-        <Footer />
+        <div className='wrapper-container'>
+          <Header />
+
+          <div className='content'>
+            <Routes>
+              <Route path='/' element={<ProductContainer />} />
+              <Route path='/team' element={<TeamContainer />} />
+              <Route path='/terms' element={<Terms />} />
+              <Route path='/privacy' element={<Privacy />} />
+            </Routes>
+          </div>
+
+          <Footer />
+        </div>
       </HashRouter>
     </div>
   );
