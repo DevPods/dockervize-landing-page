@@ -4,10 +4,9 @@ import Features from '../components/Features.jsx';
 import GettingStarted from '../components/GettingStarted.jsx';
 
 const ProductContainer = () => {
-  const productTitle = 'Docker Container Metrics Visualizer';
   const productInfo =
     'An application that intuitively manages Docker containers and monitors memory & CPU usage. While Docker has revolutionized container technology, the Command Line Interface and Docker Desktop app can \
-    be cumbersome to manage. With Dockervize, docker container statuses can be modified with the click of a button and developers can toggle the data feed to quickly \
+    be cumbersome to manage. With DockerVize, docker container statuses can be modified with the click of a button and developers can toggle the data feed to quickly \
     see container metrics.';
 
   return (
