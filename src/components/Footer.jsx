@@ -39,12 +39,15 @@ const Footer = () => {
           rel='noreferrer'
           className='footer-component'
         >
-          <ul className='footer-component'>Documentation</ul>
+          <ul className='footer-component'>Download</ul>
         </a>
       </div>
 
       <p className='oslabs-title'>
         Accelerated by OS Labs, a non-profit supporting open-source projects.
+        <br></br>
+        Have a question? &nbsp;
+        <a href='mailto:info@dockervize.com'>Contact us!</a>
       </p>
     </div>
   );

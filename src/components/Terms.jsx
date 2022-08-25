@@ -3,16 +3,7 @@ import React from 'react';
 const Terms = () => {
   const termsTitle = 'Terms and Conditions';
   const termsContent =
-    'These terms and conditions outline the rules and regulations for the use of DockerVize, \
-  located at DockerVize.com. By accessing this website, we assume you accept these terms and conditions. Do not continue \
-   to use DockerVize if you do not agree to take all of the terms stated on this page. The following terminology applies \
-   to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, \
-   the person on this website. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance \
-   and consideration of payment necessary to undertake the process of our assistance to the Client in the most \
-   appropriate manner for the express purpose of meeting the Client\'s needs in respect of provision of the Company\'s stated \
-   services, in accordance with and subject to, prevailing laws of the Netherlands. Any use of the above terminology \
-   or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and \
-   referring to the same.';
+    "These terms and conditions outline the rules and regulations for the use of DockerVize, located at DockerVize.com. By accessing this website, you accept these terms and conditions. Do not continue to use DockerVize if you do not agree to take all of the terms stated on this page. The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: ‘Client’, ‘You’ and ‘Your’ refers to you, the person on this website. ‘Party’, ‘Parties’, or ‘Us’, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing laws of the Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and referring to the same.";
   const licenseTitle = 'License';
   const licenseContent =
     'Unless otherwise stated, DockerVize and/or its licensors own the intellectual property rights \
@@ -22,8 +13,8 @@ const Terms = () => {
    DockerVize. 4. Redistribute content from DockerVize. This Agreement shall begin on the date hereof.';
   const iFramesTitle = 'iFrames';
   const iFramesContent =
-    'Without prior approval and written permission, you many not create frames around DockerVize that alter \
-   in any way the visual presentation or appearance of DockerVize.';
+    'Without prior approval and written permission, you may not create frames around DockerVize that alter, \
+   in any way, the visual presentation or appearance of DockerVize.';
   const liabilityTitle = 'Content Liability';
   const liabilityContent =
     'We shall not be held responsible for any content that appears on your Website. You agree to protect \
