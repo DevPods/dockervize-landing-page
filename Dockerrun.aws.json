@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "114736952595.dkr.ecr.us-east-1.amazonaws.com/dockervize-landing:<VERSION>",
+    "Name": "114736952595.dkr.ecr.us-east-1.amazonaws.com/dockervize-homepage:<VERSION>",
     "Update": "true"
   },
   "Ports": [
