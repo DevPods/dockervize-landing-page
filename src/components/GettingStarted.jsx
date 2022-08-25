@@ -22,7 +22,7 @@ const Features = () => {
           <h2>03</h2>
           <h3>Install dependencies</h3>
           <p>
-            Run `npm install` or `npm install -f` to install all dependencies.
+            Run `npm install -f` to install all dependencies.
           </p>
         </li>
         <li>

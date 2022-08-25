@@ -20,9 +20,8 @@ const TeamMembers = () => {
           <b className='names'>Bruno Albero</b>
 
           <p className='member-bio'>
-            My passion is building fun and robust projects. When I leave my
-            coding cave, you’ll find me playing volleyball, spoiling my cat, or
-            at boardgames night!
+            I'm a software engineer and my passion is building unique projects. When I'm not coding you can find me playing volleyball, spoiling my cat, or
+            at boardgame night!
           </p>
 
           <p className='logos'>
