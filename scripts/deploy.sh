@@ -18,6 +18,6 @@ zip -r dockervize-official.zip Dockerrun.aws.json .ebextensions
 # Upload zip file to s3 bucket
 aws s3 cp dockervize-official.zip s3://$EB_BUCKET/dockervize-official.zip
 # Create a new application version with new Dockerrun
-aws elasticbeanstalk create-application-version --application-name dockervize-official --version-label $TRAVIS_COMMIT --source-bundle S3Bucket=$EB_BUCKET,S3Key=dockerdeploy.zip
+aws elasticbeanstalk create-application-version --application-name dockervize-official --version-label $TRAVIS_COMMIT --source-bundle S3Bucket=$EB_BUCKET,S3Key=dockervize-official.zip
 # Update environment to use new version number
 aws elasticbeanstalk update-environment --environment-name Dockervizeofficial-env --version-label $TRAVIS_COMMIT
