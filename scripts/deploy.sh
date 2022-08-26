@@ -8,9 +8,9 @@ eval $(aws ecr get-login --no-include-email --region us-east-1)
 # Build docker image based on our production Dockerfile
 docker build -t dockervize/dev .
 # tag the image with the Travis-CI SHA
-docker tag dockervize/dev:latest 114736952595.dkr.ecr.us-east-1.amazonaws.com/docker-official:$TRAVIS_COMMIT
+docker tag dockervize/dev:latest 114736952595.dkr.ecr.us-east-1.amazonaws.com/dockervize-official:$TRAVIS_COMMIT
 # Push built image to ECS
-docker push 114736952595.dkr.ecr.us-east-1.amazonaws.com/docker-official:$TRAVIS_COMMIT
+docker push 114736952595.dkr.ecr.us-east-1.amazonaws.com/dockervize-official:$TRAVIS_COMMIT
 # Use the linux sed command to replace the text '<VERSION>' in our Dockerrun file with the Travis-CI SHA key
 sed -i='' "s/<VERSION>/$TRAVIS_COMMIT/" Dockerrun.aws.json
 # Zip up our codebase, along with modified Dockerrun and our .ebextensions directory
