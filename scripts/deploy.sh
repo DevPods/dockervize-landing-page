@@ -16,7 +16,7 @@ sed -i='' "s/<VERSION>/$TRAVIS_COMMIT/" Dockerrun.aws.json
 # Zip up our codebase, along with modified Dockerrun and our .ebextensions directory
 zip -r dockervize-official.zip Dockerrun.aws.json .ebextensions
 # Upload zip file to s3 bucket
-aws s3 cp dockervize-official.zip s3://$EB_BUCKET/dockerdeploy.zip
+aws s3 cp dockervize-official.zip s3://$EB_BUCKET/dockervize-official.zip
 # Create a new application version with new Dockerrun
 aws elasticbeanstalk create-application-version --application-name dockervize-official --version-label $TRAVIS_COMMIT --source-bundle S3Bucket=$EB_BUCKET,S3Key=dockerdeploy.zip
 # Update environment to use new version number
