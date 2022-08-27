@@ -6,9 +6,9 @@ aws configure set default.region us-east-1
 # Log in to ECR
 eval $(aws ecr get-login --no-include-email --region us-east-1)
 # Build docker image based on our production Dockerfile
-docker build -t dockervize/dev .
+docker build -t dockervize/dockervize-official .
 # tag the image with the Travis-CI SHA
-docker tag dockervize/dev:latest 114736952595.dkr.ecr.us-east-1.amazonaws.com/dockervize-official:$TRAVIS_COMMIT
+docker tag dockervize/dockervize-official:latest 114736952595.dkr.ecr.us-east-1.amazonaws.com/dockervize-official:$TRAVIS_COMMIT
 # Push built image to ECS
 docker push 114736952595.dkr.ecr.us-east-1.amazonaws.com/dockervize-official:$TRAVIS_COMMIT
 # Use the linux sed command to replace the text '<VERSION>' in our Dockerrun file with the Travis-CI SHA key
