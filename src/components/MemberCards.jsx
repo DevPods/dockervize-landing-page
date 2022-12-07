@@ -3,7 +3,7 @@ import Bruno from '../assets/Bruno.png';
 import Jay from '../assets/Jay.png';
 import Ian from '../assets/Ian.png';
 import Taryn from '../assets/Taryn.png';
-import linkedIn from '../assets/linkedin-logo-png-2028.png';
+import linkedIn from '../assets/linkedin.svg';
 import gitHub from '../assets/GitHub-Mark-120px-plus.png';
 
 const TeamMembers = () => {
@@ -15,12 +15,12 @@ const TeamMembers = () => {
 
       <div className='cards-container'>
         <div className='members-card'>
-          <img src={Bruno} alt='Man wearing a button down shirt' />
+          <img src={Bruno} alt='Bruno Albero' />
 
           <b className='names'>Bruno Albero</b>
 
           {/* <p className='member-bio'>
-            I am a software engineer and my passion is building unique projects.
+            My passion is building unique projects.
             When I am not coding, you can find me playing volleyball, spoiling
             my cat, or at a boardgame night!
           </p> */}
@@ -33,7 +33,7 @@ const TeamMembers = () => {
             >
               <img
                 src={linkedIn}
-                alt='Linked in logo. Blue cirle with white LI in the center.'
+                alt='Linkedin logo'
               />
             </a>
             <a
@@ -43,22 +43,22 @@ const TeamMembers = () => {
             >
               <img
                 src={gitHub}
-                alt='Github logo. Black circle with white octocat in the middle.'
+                alt='Github logo'
               />
             </a>
           </p>
         </div>
 
         <div className='members-card'>
-          <img src={Jay} alt='Man wearing a blue t-shirt' />
+          <img src={Jay} alt='Jay Hickey' />
 
           <b className='names'>Jay Hickey</b>
 
-          <p className='member-bio'>
+          {/* <p className='member-bio'>
             I am a software engineer from NYC passionate about testing and
             security. I like to spend my free time watching baseball or soccer,
             reading fiction, and cooking.
-          </p>
+          </p> */}
 
           <p className='logos'>
             <a
@@ -68,7 +68,7 @@ const TeamMembers = () => {
             >
               <img
                 src={linkedIn}
-                alt='Linked in logo. Blue cirle with white LI in the center.'
+                alt='Linkedin logo'
               />
             </a>
             <a
@@ -78,23 +78,23 @@ const TeamMembers = () => {
             >
               <img
                 src={gitHub}
-                alt='Github logo. Black circle with white octocat in the middle.'
+                alt='Github logo'
               />
             </a>
           </p>
         </div>
 
         <div className='members-card'>
-          <img src={Ian} alt='Man wearing a light blue suit' />
+          <img src={Ian} alt='Sinian Ma' />
 
           <b className='names'>Sinian Ma</b>
 
-          <p className='member-bio'>
+          {/* <p className='member-bio'>
             I am a software engineer with a strong interest in full-stack
             development and building open-source products. In my leisure time, I
             like playing tennis and bringing my golden retriever to the dog
             beach!
-          </p>
+          </p> */}
 
           <p className='logos'>
             <a
@@ -104,7 +104,7 @@ const TeamMembers = () => {
             >
               <img
                 src={linkedIn}
-                alt='Linked in logo. Blue cirle with white LI in the center.'
+                alt='Linkedin logo'
               />
             </a>
             <a
@@ -114,22 +114,22 @@ const TeamMembers = () => {
             >
               <img
                 src={gitHub}
-                alt='Github logo. Black circle with white octocat in the middle.'
+                alt='Github logo'
               />
             </a>
           </p>
         </div>
 
         <div className='members-card'>
-          <img src={Taryn} alt='Woman sitting in a garden' />
+          <img src={Taryn} alt='Taryn Cunha' />
 
           <b className='names'>Taryn Cunha</b>
 
-          <p className='member-bio'>
+          {/* <p className='member-bio'>
             I am a full-stack engineer that enjoys contributing to the
             open-source community. In my free time I like to hike, dance, and
             hang out with my pup Galaxy.
-          </p>
+          </p> */}
 
           <p className='logos'>
             <a
@@ -139,7 +139,7 @@ const TeamMembers = () => {
             >
               <img
                 src={linkedIn}
-                alt='Linked in logo. Blue cirle with white LI in the center.'
+                alt='Linkedin logo'
               />
             </a>
             <a
@@ -149,7 +149,7 @@ const TeamMembers = () => {
             >
               <img
                 src={gitHub}
-                alt='Github logo. Black circle with white octocat in the middle.'
+                alt='Github logo'
               />
             </a>
           </p>

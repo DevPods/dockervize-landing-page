@@ -463,10 +463,16 @@ h1 {
   padding: 25px 25px;
   align-items: center;
   margin: 0px 12.5px;
-  height: 400px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 0.2s;
+  border-radius: 20px;
+}
+
+.members-card:hover {
+  box-shadow: rgba(37, 44, 176, 0.2) 0px 3px 10px 0px;
 }
 
 .names {
@@ -690,20 +696,12 @@ dt::before {
 
   .members-card {
     margin-bottom: 25px;
-    height: 400px;
-    width: 300px;
   }
 
   .product-content img {
     height: auto;
     width: 100%;
   }
-
-  // .member-bio {
-  //   margin-bottom: 20px;
-  //   font-size: 1rem;
-  //   height: 100%;
-  // }
 }
 
 @media screen and (max-width: 1000px) {
