@@ -19,11 +19,11 @@ const TeamMembers = () => {
 
           <b className='names'>Bruno Albero</b>
 
-          <p className='member-bio'>
+          {/* <p className='member-bio'>
             I am a software engineer and my passion is building unique projects.
             When I am not coding, you can find me playing volleyball, spoiling
             my cat, or at a boardgame night!
-          </p>
+          </p> */}
 
           <p className='logos'>
             <a

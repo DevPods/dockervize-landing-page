@@ -13,6 +13,7 @@ const Features = () => {
             background.
           </p>
         </li>
+        
         <li>
           <h2>02</h2>
           <h3>Clone Repo</h3>

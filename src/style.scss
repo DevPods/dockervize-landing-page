@@ -24,7 +24,7 @@ a:hover {
 
 h1 {
   color: $primary-color;
-  background-color: transparent;
+  background-color: transparent; 
   color: black;
   flex-direction: column;
   align-content: center;
@@ -77,6 +77,7 @@ h1 {
   opacity: 0.95;
   height: 5rem;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  z-index: 3;
 }
 
 .header-left {
@@ -124,7 +125,7 @@ h1 {
   text-transform: uppercase;
   font-size: 17px;
   transition: 0.3s;
-  z-index: 1;
+  z-index: 3;
   font-family: inherit;
   color: #252cb0;
 }
@@ -241,7 +242,7 @@ h1 {
   background-color: transparent;
 }
 
-//Quit Button
+//Download Button
 .header-component button {
   border-radius: 5px;
   padding: 0.8em 1.8em;
@@ -261,7 +262,7 @@ h1 {
 .header-component button::before {
   content: '';
   width: 0;
-  height: 300%;
+  height: 500%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -416,7 +417,6 @@ h1 {
   font-size: 4vh;
   margin-bottom: 50px;
   overflow-wrap: wrap;
-  // max-width: 65%;
 }
 
 .product-content h1 {
@@ -430,8 +430,7 @@ h1 {
 }
 
 .product-content img {
-  height: 600px;
-  width: 1200px;
+  width: 90%;
 }
 
 .members-title {
@@ -485,7 +484,6 @@ h1 {
   width: 40%;
   display: flex;
   justify-content: space-between;
-  // margin-bottom: 20px;
 }
 
 .logos img {
@@ -500,8 +498,6 @@ h1 {
 }
 
 //feature lists
-
-// $font-size-small: 0.875em;
 
 /*- Screen Sizes*/
 $tablet-width: 768px;
@@ -601,6 +597,7 @@ dt::before {
   font-size: 10vh;
   margin-top: 40px;
   margin-bottom: 0px;
+  // background-color: transparent;
   background: -webkit-linear-gradient(#6488ec, rgba(122, 118, 118, 0.101));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -614,6 +611,8 @@ dt::before {
 }
 .tilesWrap li {
   display: inline-block;
+  flex-shrink: 0;
+  height: 205px;
   width: 20%;
   min-width: 200px;
   max-width: 230px;
@@ -621,12 +620,12 @@ dt::before {
   position: relative;
   vertical-align: top;
   margin: 10px;
-
   min-height: 23vh;
-  background: white;
+  background: transparent;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: left;
   border-radius: 20px;
+  bottom: 0;
 }
 
 .tilesWrap li h2 {
@@ -634,9 +633,11 @@ dt::before {
   margin: 0;
   position: absolute;
   opacity: 0.05;
+  background-color: transparent;
   top: 150px;
   right: 10px;
   transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 .tilesWrap li h3 {
   font-size: 20px;
@@ -644,6 +645,7 @@ dt::before {
   margin-bottom: 5px;
 }
 .tilesWrap li p {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   color: black;
@@ -651,8 +653,10 @@ dt::before {
 }
 
 .tilesWrap li:hover h2 {
+  position: absolute;
   top: 0px;
   opacity: 0.6;
+  background-color: none;
 }
 
 .tilesWrap li:before {
@@ -663,14 +667,12 @@ dt::before {
   right: -2px;
   bottom: -2px;
   z-index: -1;
-  background: #fff;
   transform: skew(2deg, 2deg);
 }
 .tilesWrap li:after {
   content: '';
   position: absolute;
   width: 40%;
-  height: 100%;
   left: 0;
   top: 0;
 }
@@ -793,7 +795,7 @@ dt::before {
     text-transform: uppercase;
     font-size: 17px;
     transition: 0.3s;
-    z-index: 1;
+    z-index: 3;
     font-family: inherit;
     color: #252cb0;
     padding: 10px;
@@ -810,5 +812,17 @@ dt::before {
   .privacy-title,
   .terms-title {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1370px) and (max-width: 1750px) {
+  .tilesWrap {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 1369px) {
+  .tilesWrap {
+    width: 70%;
   }
 }
