@@ -597,7 +597,6 @@ dt::before {
   font-size: 10vh;
   margin-top: 40px;
   margin-bottom: 0px;
-  // background-color: transparent;
   background: -webkit-linear-gradient(#6488ec, rgba(122, 118, 118, 0.101));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -605,6 +604,7 @@ dt::before {
 
 .tilesWrap {
   padding: 0;
+  width: 110%;
   margin: 50px auto;
   list-style: none;
   text-align: center;
@@ -675,6 +675,10 @@ dt::before {
   width: 40%;
   left: 0;
   top: 0;
+}
+
+.tilesWrap li:hover {
+  box-shadow: rgba(37, 44, 176, 0.2) 0px 3px 10px 0px;
 }
 
 //media queries
@@ -815,14 +819,20 @@ dt::before {
   }
 }
 
-@media screen and (min-width: 1370px) and (max-width: 1750px) {
+@media screen and (min-width: 1370px) and (max-width: 1415px) {
   .tilesWrap {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 748px) and (max-width: 1369px) {
+@media screen and (min-width: 800px) and (max-width: 1369px) {
   .tilesWrap {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 799px) {
+  .tilesWrap {
+    width: 80%;
   }
 }
