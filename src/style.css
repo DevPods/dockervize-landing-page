@@ -3,6 +3,11 @@ body {
   overflow-x: hidden;
 }
 
+.mobileWrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .container {
   padding: 0 2.5%;
 }

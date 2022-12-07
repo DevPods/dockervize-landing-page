@@ -9,7 +9,7 @@ import Privacy from './components/Privacy.jsx';
 
 const App = () => {
   return (
-    <div>
+    <div className='mobileWrapper'>
       <HashRouter>
         <div className='wrapper-container'>
           <Header />
